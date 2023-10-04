@@ -10,17 +10,18 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class util {
-    public static void saveEmployInfo(String firstName, String lastName, String userName, String pass, String confirmPass) throws IOException, ParseException {
+    public static void saveEmployInfo(String firstName, String lastName, String userName, String pass) throws IOException, ParseException {
         String file = "./src/test/resources/Employeeinfo.json";
         JSONParser jsonParser = new JSONParser();
         JSONArray jsonArray = (JSONArray) jsonParser.parse(new FileReader(file));
 
+
         JSONObject employeeObjet = new JSONObject();
-        employeeObjet.put("firstname", firstName);
+        Object firstname = employeeObjet.put("firstname", firstName);
         employeeObjet.put("lastName", lastName);
         employeeObjet.put("userName", userName);
         employeeObjet.put("pass", pass);
-        employeeObjet.put("confirmPass", confirmPass);
+
 
 
         jsonArray.add(employeeObjet);
@@ -29,5 +30,11 @@ public class util {
         writer.flush();
         writer.close();
 
+    }
+    public static JSONArray ReadInfo() throws IOException, ParseException {
+        String file = "./src/test/resources/Employeeinfo.json";
+        JSONParser parser = new JSONParser();
+        JSONArray jsonArray= (JSONArray) parser.parse(new FileReader(file));
+        return jsonArray;
     }
 }

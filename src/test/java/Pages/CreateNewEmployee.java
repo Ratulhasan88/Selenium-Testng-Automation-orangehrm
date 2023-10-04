@@ -29,7 +29,7 @@ public class CreateNewEmployee {
         PageFactory.initElements(driver,this);
 
     }
-    public void createuser(String firstName, String lastName, String userName, String pass, String confirmPass) {
+    public void createuser(String firstName, String lastName, String userName, String pass) {
         Menue.get(1).click();
         AddBtn.get(1).click();
 
@@ -38,7 +38,7 @@ public class CreateNewEmployee {
         CreateLoginDetails.get(0).click();
         EmployeeTextFields.get(5).sendKeys(userName);
         EmployeeTextFields.get(6).sendKeys(pass);
-        EmployeeTextFields.get(7).sendKeys(confirmPass);
+        EmployeeTextFields.get(7).sendKeys(pass);
         SaveBtn.get(1).click();
 
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="OrangeHrm portal vAtomation">
+    <test name ="Create employee">
+        <classes>
+            <class name ="TestRunner.CreateEmployTestRun">
+
+            </class>
+        </classes>
+    </test>
+    <test name ="Login new employee">
+        <classes>
+            <class name ="TestRunner.UserLoginTestRun">
+
+            </class>
+        </classes>
+    </test>
+</suite>
