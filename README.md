@@ -21,11 +21,16 @@
 ## Test Cases For Automation
  - [[Google Drive](https://docs.google.com/spreadsheets/d/1rV5zmZRtifpRC2xvnloNuAk0ri_6O85yqIyaYjh6kY0/edit?usp=sharing)](https://docs.google.com/spreadsheets/d/1BkNyD8RsB2Pn4MMIH6ggFPzDL-hpulW6TyD9mmcBGsI/edit?usp=sharing)
 
- ## Requirements
+ ## Requirements:
   - Java needs to be installed in device
 
- ## Video of Result
-  - 
+ ## Video of Result:
 
-## Allure Report
+
+https://github.com/Ratulhasan88/Selenium-Testng-Automation-orangehrm/assets/135263807/553c91ff-1dd1-45c0-907c-da4bd6afba99
+
+
+
+## Allure Report:
+
 
